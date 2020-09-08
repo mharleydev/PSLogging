@@ -201,9 +201,7 @@ Function Write-LogInfo {
 
   Process {
     #Add TimeStamp to message if specified
-    If ( $TimeStamp -eq $True ) {
-      $Message = "[$([DateTime]::Now)]  $Message"
-    }
+    $Message = "[$([DateTime]::Now)]  $Message"
 
     #Write Content to Log
     Add-Content -Path $LogPath -Value $Message
