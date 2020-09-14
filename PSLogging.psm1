@@ -312,11 +312,6 @@ Function Stop-Log {
     Write-Output "***************************************************************************************************"
     Write-Output "Finished processing at [$([DateTime]::Now)]."
     Write-Output "***************************************************************************************************"
-
-    #Exit calling script if NoExit has not been specified or is set to False
-    If( !($NoExit) -or ($NoExit -eq $False) ){
-      Exit
-    }
   }
 }
 
