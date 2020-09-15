@@ -388,11 +388,11 @@ Function Send-Log {
       #Create SMTP object and send email
       $oSmtp = new-object Net.Mail.SmtpClient( $SMTPServer )
       $oSmtp.Send( $EmailFrom, $EmailTo, $EmailSubject, $sBody )
-      Exit 0
+      #Exit 0
     }
 
     Catch {
-      Exit 1
+      #Exit 1
     }
   }
 }
